@@ -35,13 +35,15 @@ const getEnv = (variable, optional = false) => {
  module.exports = {
   solidity: "0.8.4",
   networks: {
-    alfajores: {
-      url: "https://alfajores-forno.celo-testnet.org",
+    celo: {
+      url: "https://forno.celo.org",
       accounts: {
         mnemonic: process.env.MNEMONIC,
-        path: "m/44'/60'/0'/0",
+        path: "m/44'/52752'/0'/0",
       },
-      chainId: 44787,
+      chainId: 42220,
     },
   },
 };
+
+//m/44'/60'/0'/0
